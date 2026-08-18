@@ -1,25 +1,25 @@
 class Edamame < Formula
   desc "A fast TUI Markdown editor and viewer"
   homepage "https://github.com/mijowi/edamame"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/mijowi/edamame/releases/download/v0.1.0/edamame-aarch64-apple-darwin.tar.xz"
-      sha256 "b342ba4e93df2ff0386df1710afb76e33a798f8a426562076ceba8376aaaeea8"
+      url "https://github.com/mijowi/edamame/releases/download/v0.1.1/edamame-aarch64-apple-darwin.tar.xz"
+      sha256 "c83f3ffb15777252b9c3b338d1c361f09c24273770914366cc9884dea82e5c48"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mijowi/edamame/releases/download/v0.1.0/edamame-x86_64-apple-darwin.tar.xz"
-      sha256 "47d8da341af44f0e5c517bb9b364c4ead72c78595ac223f478fd1d7e431ba5c5"
+      url "https://github.com/mijowi/edamame/releases/download/v0.1.1/edamame-x86_64-apple-darwin.tar.xz"
+      sha256 "ddb7e86fd099a45d18e4804a66acf77d2f40de414ea9f484fd19156c7c3d2114"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/mijowi/edamame/releases/download/v0.1.0/edamame-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "daebb89d101300ae619c14a2388e3ef1d85b26bbfd9357f892bc77e362ae28dd"
+      url "https://github.com/mijowi/edamame/releases/download/v0.1.1/edamame-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "d4e54e63dc45b7ddc41d6f0bd35a8d4b9a5099c4563b7ca5a774e0ae20e6029b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mijowi/edamame/releases/download/v0.1.0/edamame-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "5830c472ce264ceb2ef71fe5e66de7c15f31c3f804e50fd3f4e1de0ae8835b41"
+      url "https://github.com/mijowi/edamame/releases/download/v0.1.1/edamame-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "4cb0d592a6d875d79c057c54ae90252db4d823a4742a0dae13f5ea3faf119fa5"
     end
   end
   license "Apache-2.0"

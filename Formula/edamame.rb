@@ -1,25 +1,25 @@
 class Edamame < Formula
   desc "A Terminal Markdown editor that stays rendered while you edit"
   homepage "https://github.com/mijowi/edamame"
-  version "0.1.6"
+  version "0.1.7"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/mijowi/edamame/releases/download/v0.1.6/edamame-aarch64-apple-darwin.tar.xz"
-      sha256 "ce209cc33c6d6ed8bbf3cc1b21dfddb4b3e88bd7f0e5aaebfbd8b4f1641d07f7"
+      url "https://github.com/mijowi/edamame/releases/download/v0.1.7/edamame-aarch64-apple-darwin.tar.xz"
+      sha256 "e90f1adeddf2495c08ee6c8490bb66661e2403368af011ef565c0fcd840df678"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mijowi/edamame/releases/download/v0.1.6/edamame-x86_64-apple-darwin.tar.xz"
-      sha256 "bc0cf6dae508fceba6e736b251cd90636c7c155c67f27f20a302f1880c0d6556"
+      url "https://github.com/mijowi/edamame/releases/download/v0.1.7/edamame-x86_64-apple-darwin.tar.xz"
+      sha256 "73dc6ef254e06da176463e3360bbfffeb2a0585fd3098644123b66f72494c428"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/mijowi/edamame/releases/download/v0.1.6/edamame-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "425fa2d71740ebab319340b888fdb87f58f0ed16079b80bbf10a327c554e2835"
+      url "https://github.com/mijowi/edamame/releases/download/v0.1.7/edamame-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "33d3c471976d2ddb5f232482e860bfcf8d839520b4d671af4349bcf680c62e33"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mijowi/edamame/releases/download/v0.1.6/edamame-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "81db5aa77387e2c9c9e7a3e7f8648ca42b12ca02463e18b732863fef16a4a105"
+      url "https://github.com/mijowi/edamame/releases/download/v0.1.7/edamame-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "7962f15a2d9f758b1161fb5c836a0bb2fd5331ef5ef24e3c2e55e4584f8d7eee"
     end
   end
   license "Apache-2.0"
@@ -28,6 +28,7 @@ class Edamame < Formula
     "aarch64-apple-darwin":              {},
     "aarch64-unknown-linux-gnu":         {},
     "x86_64-apple-darwin":               {},
+    "x86_64-pc-windows-gnu":             {},
     "x86_64-unknown-linux-gnu":          {},
     "x86_64-unknown-linux-musl-dynamic": {},
     "x86_64-unknown-linux-musl-static":  {},
